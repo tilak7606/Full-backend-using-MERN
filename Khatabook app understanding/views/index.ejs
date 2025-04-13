@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <% files.forEach(function(file){ %>
+        <%= file %>
+    <% }) %> -->
+
+    <% files.forEach(function(file){ %>  <!--Here is not = means only do computation -->
+       <h1> <%= file %> </h1> <!--This means ki kuch print karna hai after computation-->
+       <a href="/edit/<%= file %> ">edit</a> 
+       <a href="/delete/<%= file %>">delete</a>
+       
+       <%}) %>
+
+</body>
+</html>
